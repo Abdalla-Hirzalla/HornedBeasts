@@ -1,25 +1,31 @@
 import React from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Col, Row, Container } from "react-bootstrap";
 import HornedBeasts from './hornedbeasts';
+import Data from './assets/data.json';
+
+
+
 
 class Main extends React.Component {
-
     render() {
         return (
-            <main>
-                <HornedBeasts
-                    title="UniCorn"
-                    description="The unicorn is a legendary creature that has been described since antiquity as a beast with a single large, pointed, spiraling horn projecting from its forehead"
-                    img="https://static.timesofisrael.com/www/uploads/2020/01/iStock-1130790354-e1580141646848.jpg"
-                />
-                <HornedBeasts
-                    title="Rhinoceros"
-                    description="Rhinoceroses are characterized by the possession of one or two horns on the upper surface of the snout"
-                    img="https://blog.aci.aero/wp-content/uploads/2019/09/shutterstock_432544738.jpg"
-                />
-            </main>
+            <>
+                <Container>
+                    <Row>
+                        {Data.map((item, index) => {
+                            return (
+                                <Col lg={4}>
+                                    <HornedBeasts title={item.title} imgUrl={item.image_url} description={item.description} />
+                                </Col>
+                            )
+                        }
+
+                        )}
+                    </Row>
+                </Container>
+            </>
         )
     }
 }
-
 export default Main;
