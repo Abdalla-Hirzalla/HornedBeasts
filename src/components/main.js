@@ -9,13 +9,13 @@ class Main extends React.Component {
             <main>
                 <HornedBeasts
                     title="UniCorn"
-                    description="The unicorn is a legendary creature that has been described since antiquity as a beast with a single large, pointed, spiraling horn projecting from its forehead"
-                    img="https://static.timesofisrael.com/www/uploads/2020/01/iStock-1130790354-e1580141646848.jpg"
+                    description="A unicorn and a narwhal nuzzling their horns"
+                    img="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"
                 />
                 <HornedBeasts
-                    title="Rhinoceros"
-                    description="Rhinoceroses are characterized by the possession of one or two horns on the upper surface of the snout"
-                    img="https://blog.aci.aero/wp-content/uploads/2019/09/shutterstock_432544738.jpg"
+                    title="Rhino Family"
+                    description="Mother (or father) rhino with two babies"
+                    img="https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=1825&q=80"
                 />
             </main>
         )
